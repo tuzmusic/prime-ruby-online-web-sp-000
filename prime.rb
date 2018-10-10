@@ -9,7 +9,7 @@ def prime?(num)
   # binding.pry
   # puts "testing #{possible_factors.size} factors of #{num}."
   !possible_factors.any? { |factor|
-    num % factor == 0
+    num.odd? && num % factor == 0
   }
   # return true
 end
