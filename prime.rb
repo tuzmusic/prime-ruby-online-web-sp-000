@@ -16,7 +16,7 @@ def prime?(num)
 end
 
 puts Benchmark.measure{
-  50_000.times {
+  5.times {
     prime?(2999999)
   }
 }
