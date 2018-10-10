@@ -5,7 +5,7 @@ def prime?(num)
   return false if num > 3 && num.even?
   # now we're dealing only with odd numbers greater than 4
   highest_factor = (num / 2).floor
-  possible_factors = (1..highest_factor)
+  possible_factors = (2..highest_factor)
   possible_factors.each { |factor|
     if num % factor == 0
       binding.pry
