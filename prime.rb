@@ -17,6 +17,6 @@ end
 
 puts Benchmark.measure{
   50_000.times {
-    prime?(299)
+    prime?(2999999)
   }
 }
