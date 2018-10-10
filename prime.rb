@@ -9,8 +9,8 @@ def prime?(num)
   # binding.pry
   # puts "testing #{possible_factors.size} factors of #{num}."
   !possible_factors.any? { |factor|
-    # return true if (factor > num/factor)
-    factor > num/factor || num % factor == 0
+    return true if factor > num/factor
+    num % factor == 0
   }
 end
 
