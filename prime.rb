@@ -1,4 +1,4 @@
-def prime(num)
+def prime?(num)
   return true if num < 4
   return false if num > 3 && num.even?
   # now we're dealing only with odd numbers greater than 4
