@@ -14,3 +14,9 @@ def prime?(num)
   }
   return true
 end
+
+puts Benchmark.measure{
+  50_000.times {
+    prime?(299)
+  }
+}
