@@ -8,7 +8,9 @@ def prime?(num)
   possible_factors = (5..highest_factor)#.select {|n| n.odd?}
   # binding.pry
   # puts "testing #{possible_factors.size} factors of #{num}."
-  !possible_factors.any? { |factor| num % factor == 0 }
+  !possible_factors.any? { |factor|
+    num % factor == 0 || factor > num/factor
+  }
 end
 
 puts Benchmark.measure{
