@@ -5,7 +5,10 @@ def prime?(num)
   highest_factor = (num / 2).floor
   possible_factors = (1..highest_factor)
   possible_factors.each { |factor|
-    return false if num % factor == 0
+    if num % factor == 0
+      binding.pry
+      return false
+    end
   }
   return true
 end
