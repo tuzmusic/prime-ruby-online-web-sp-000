@@ -7,7 +7,7 @@ def prime?(num)
   highest_factor = (num / 3).floor
   possible_factors = (5..highest_factor)
   !possible_factors.any? { |factor|
-true if factor > num/factor
+    true if factor > num/factor
     num % factor == 0
   }
 end
