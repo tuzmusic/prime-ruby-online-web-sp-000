@@ -1,4 +1,5 @@
 require 'pry'
+require 'benchmark'
 
 def prime?(num)
   return false if num < 2 || (num > 3 && num.even?)
