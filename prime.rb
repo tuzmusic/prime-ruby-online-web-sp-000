@@ -8,7 +8,7 @@ def prime?(num)
   possible_factors = (2..highest_factor)
   possible_factors.each { |factor|
     if num % factor == 0
-      binding.pry
+      # binding.pry
       return false
     end
   }
