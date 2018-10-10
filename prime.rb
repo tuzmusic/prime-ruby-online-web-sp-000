@@ -8,11 +8,8 @@ def prime?(num)
   possible_factors = (2..highest_factor)#.select {|n| n.odd?}
   # binding.pry
   puts "testing #{possible_factors.size} factors of #{num}."
-  possible_factors.each { |factor|
-    if num % factor == 0
-      # binding.pry
-      return false
-    end
+  !possible_factors.any { |factor|
+    num % factor == 0
   }
   return true
 end
